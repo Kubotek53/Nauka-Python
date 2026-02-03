@@ -27,6 +27,17 @@ def zakupy():
                 break
             else:
                 print(f"Niestety, mamy tylko {produkty[produkt]} {produkt}(ów) w magazynie.")
+        else:
+            print("Produkt nie jest dostępny w sklepie.")
+
+
+            
+    
+
+
+    
+            
+
             
                 
 

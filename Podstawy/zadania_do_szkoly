@@ -1,0 +1,9 @@
+def zad1():
+    slowo = input("Podaj słowo dla którego chcesz sprawdzić kod ASCII: ")
+    suma = 0
+    for z in slowo:
+        print(f"Kod ASCII dla znaku '{z}' to: {ord(z)}")
+        suma += ord(z)
+    return(f"Sumą kodu ASCII jest: {suma}")
+print(zad1())
+    
