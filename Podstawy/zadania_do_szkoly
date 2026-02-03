@@ -6,4 +6,20 @@ def zad1():
         suma += ord(z)
     return(f"Sumą kodu ASCII jest: {suma}")
 print(zad1())
-    
+
+def zad2():
+    zdanie = input("Podaj zdanie: ")
+    zdanie = zdanie.lower()
+    samogloski = ['a', 'e', 'i', 'o', 'u', 'y']
+    sumsamo = 0
+    sumspol = 0
+    for s in zdanie:
+        if s.isalpha():
+            if s in samogloski:
+                sumsamo += 1
+            else:
+                sumspol += 1
+    print(sumsamo)
+    print(sumspol)
+print(zad2())
+
