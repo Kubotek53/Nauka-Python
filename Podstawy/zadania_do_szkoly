@@ -37,4 +37,21 @@ def zad5():
     napis = "Pass##wo$$rd123!!"
     czysty = "".join(char for char in napis if char.isalnum())
     return czysty
-print(zad5())
+def zad6():
+    import os
+    path = os.path.join(os.path.dirname(__file__), "dane.txt")
+    short_lines = []
+    try:
+        with open(path, "r", encoding="utf-8") as plik:
+            for wiersz in plik:
+                s = wiersz.strip()
+                print(s)
+                if len(s) < 10:
+                    short_lines.append(s)
+    except FileNotFoundError:
+        return f"Plik nie znaleziony: {path}"
+    if short_lines:
+        return f"Wiersze krótsze niż 10 znaków: {short_lines}"
+    return "Brak wierszy krótszych niż 10 znaków"
+
+print(zad6())
