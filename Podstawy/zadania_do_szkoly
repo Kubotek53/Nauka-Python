@@ -23,3 +23,9 @@ def zad2():
     print(sumspol)
 print(zad2())
 
+def zad3():
+    zdanie = "kurs pythona jest super"
+    camel_case = "".join(word.capitalize() for word in zdanie.split())
+    return camel_case
+print(zad3())
+    
