@@ -28,4 +28,13 @@ def zad3():
     camel_case = "".join(word.capitalize() for word in zdanie.split())
     return camel_case
 print(zad3())
-    
+def zad4():
+    roznica = ord('D') - ord('A')
+    roznica = abs(roznica)
+    return(roznica)
+print(zad4())
+def zad5():
+    napis = "Pass##wo$$rd123!!"
+    czysty = "".join(char for char in napis if char.isalnum())
+    return czysty
+print(zad5())
